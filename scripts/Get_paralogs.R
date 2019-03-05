@@ -100,11 +100,13 @@ ensembl95.paralogs.hgnc.proteincoding.count <- hgnc %>%
 
 ## export files
 
-write.table(ensembl95.paralogs.hgnc.proteincoding,"./results/paralogs_ensembl95_proteincoding.txt",
+write.table(ensembl95.paralogs.hgnc.proteincoding,gzfile("./results/paralogs_ensembl95_proteincoding.txt.gz"),
             quote = F, sep = "\t", row.names = F)
 
-write.table(ensembl95.paralogs.hgnc.proteincoding.count,"./results/paralogs_count_ensembl95_proteincoding.txt",
+write.table(ensembl95.paralogs.hgnc.proteincoding.count,gzfile("./results/paralogs_count_ensembl95_proteincoding.txt.gz"),
             quote = F, sep = "\t", row.names = F)
+
+
 
 ################################################################################################################################
 ################################################################################################################################
