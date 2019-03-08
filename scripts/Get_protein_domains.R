@@ -50,7 +50,7 @@ ensembl95.pfam <- getBM(attributes = c("hgnc_id","pfam"),
   filter(pfam!="") %>%
   distinct()
 
-## many other domain databases : pirsf, prints, scanprosite, pfscan, smart, superfamily, tigrfam
+## other domain data available through biomaRt : pirsf, prints, scanprosite, pfscan, smart, superfamily, tigrfam
 
 ################################################################################################################################
 ################################################################################################################################
